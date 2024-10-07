@@ -4,8 +4,8 @@ public struct BumpIdentifier
 {
     private static BumpIdentifier _instance;
     public string? Id { get; private set; }
-    public void updateIdentifier(string identifier) => Id = identifier;
-    public void cleanIdentifier() => Id = null;
+    public void UpdateIdentifier(string identifier) => Id = identifier;
+    public void CleanIdentifier() => Id = null;
     public bool IsInited => Id != null;
 
     public static ref BumpIdentifier Get()

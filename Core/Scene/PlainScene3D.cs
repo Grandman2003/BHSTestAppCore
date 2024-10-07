@@ -1,5 +1,4 @@
-﻿using Core.Entities.Base;
-using Core.Entities.Behaviours;
+﻿using Core.Entities.Behaviours;
 
 namespace Core.Scene;
 

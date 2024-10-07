@@ -6,6 +6,9 @@ using Leopotam.EcsLite;
 
 namespace Core.Game.Systems;
 
+/// <summary>
+/// Система инициализации мира
+/// </summary>
 public sealed class InitPlaceablesSystem: IEcsInitSystem
 {
     private readonly PlainScene3D _gameScene;

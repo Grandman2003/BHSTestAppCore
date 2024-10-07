@@ -3,6 +3,9 @@ using Core.Entities.Base;
 
 namespace Core.Entities.Behaviours;
 
+/// <summary>
+/// Аггрегатор позволяющий делать <see cref="Core.Entities.Behaviours.IPlaceable3D"/> передвигаемым
+/// </summary>
 public struct Movable : IPlaceable3D
 {
     public IPlaceable3D Placeable { get; }

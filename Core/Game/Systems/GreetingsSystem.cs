@@ -2,6 +2,9 @@
 
 namespace Core.Game.Systems;
 
+/// <summary>
+/// Система вступительного экрана - позволяет ознакомиться с названием игры и её описанием
+/// </summary>
 public sealed class GreetingsSystem: IEcsInitSystem
 {
     private readonly int _startDelayMillis;

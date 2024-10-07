@@ -4,6 +4,9 @@ using Leopotam.EcsLite;
 
 namespace Core.Game.Controllers;
 
+/// <summary>
+/// Контроллер для взаимодействия с системами игрового мира
+/// </summary>
 public sealed class GameController
 {
     private EcsWorld? _world;
@@ -15,6 +18,9 @@ public sealed class GameController
         _gameScene = gameScene;
     }
 
+    /// <summary>
+    /// Инициализация систем
+    /// </summary>
     public void Init()
     {
         _world = new EcsWorld();
@@ -28,10 +34,16 @@ public sealed class GameController
             .Init();
     }
     
+    /// <summary>
+    /// Обновление прогоняемых систем
+    /// </summary>
     public void Update () {
         _systems?.Run ();
     }
 
+    /// <summary>
+    /// Чистка систем и мира игры
+    /// </summary>
     public void OnDestroy () {
         _systems?.Destroy ();
         _systems?.GetWorld ()?.Destroy ();
