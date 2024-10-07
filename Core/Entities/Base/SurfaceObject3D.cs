@@ -2,6 +2,9 @@
 
 namespace Core.Entities.Base;
 
-public interface SurfaceObject3D : IPlaceable3D, ISpacialFeatures, IPhysical
+/// <summary>
+/// Интрефейс объёмного объекта, который можно расположить на плоскости или в пространстве
+/// </summary>
+public interface SurfaceObject3D : IPlaceable3D, ISpacialFeatures
 {
 }

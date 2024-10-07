@@ -27,14 +27,4 @@ public struct Sphere: SurfaceObject3D
     {
         Coordinates = coordinates;
     }
-    
-    public bool hasIntersaction(Coordinates3D outsidePoint)
-    {
-        var placeable = this as IPlaceable3D; 
-        return Radius >= Math.Sqrt(
-            Math.Pow(placeable.X - outsidePoint.X, 2) +
-            Math.Pow(placeable.Y - outsidePoint.Y, 2) +
-            Math.Pow(placeable.Z - outsidePoint.Z, 2)
-        );
-    }
 }

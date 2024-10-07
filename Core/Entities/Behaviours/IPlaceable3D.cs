@@ -2,6 +2,9 @@
 
 namespace Core.Entities.Behaviours;
 
+/// <summary>
+/// Позволяет расположить объект в 3D пространстве
+/// </summary>
 public interface IPlaceable3D
 {
     public Coordinates3D Coordinates { get; }

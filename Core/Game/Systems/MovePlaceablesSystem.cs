@@ -7,6 +7,9 @@ using Leopotam.EcsLite;
 
 namespace Core.Game.Systems;
 
+/// <summary>
+/// Система передвижения объектов по сцене
+/// </summary>
 public sealed class MovePlaceablesSystem: IEcsRunSystem
 {
     private Wall[]? _walls;
@@ -32,6 +35,10 @@ public sealed class MovePlaceablesSystem: IEcsRunSystem
         _movables.AsParallel().ForAll(TryMove);
     }
     
+    /// <summary>
+    /// Метод в котором система пытается проивести перемещение объекта
+    /// </summary>
+    /// <param name="movable"></param>
     private void TryMove(Movable movable)
     {
         if (_walls is null) return;
@@ -43,6 +50,10 @@ public sealed class MovePlaceablesSystem: IEcsRunSystem
         }
     }
 
+    /// <summary>
+    /// Метод по перемещению объекта в указанном направлении
+    /// </summary>
+    /// <param name="movable"></param>
     private void Move(ref Movable movable)
     {
         if (movable.DirectionEntity == null) return;
@@ -50,6 +61,13 @@ public sealed class MovePlaceablesSystem: IEcsRunSystem
         movable.UpdateCoordinates(movable.Coordinates.Add(direction.MovableDirection));
     }
 
+    /// <summary>
+    /// Определение положения сферы и состояния отталкивания относительно стен
+    /// </summary>
+    /// <param name="walls"></param>
+    /// <param name="movable"></param>
+    /// <param name="sphereRadius"></param>
+    /// <returns></returns>
     private bool CheckSpherePosition(Wall[] walls,ref Movable movable, int sphereRadius)
     {
         var minimumDistance = int.MaxValue;
@@ -105,7 +123,7 @@ public sealed class MovePlaceablesSystem: IEcsRunSystem
         {
             if (movable.DirectionEntity == null) return false;
             
-            BumpIdentifier.Get().updateIdentifier($"WallID: {nearestWall.Value.Coordinates}");
+            BumpIdentifier.Get().UpdateIdentifier($"WallID: {nearestWall.GetHashCode().ToString()} {nearestWall.Value.Coordinates}");
             ref var direction = ref _vectorDestinationPool!.Get(movable.DirectionEntity.Value);
             var newDestionation = Vector3.Reflect(
                 vector: direction.MovableDirection,
@@ -117,6 +135,14 @@ public sealed class MovePlaceablesSystem: IEcsRunSystem
         return true;
     }
 
+    /// <summary>
+    /// Определение расстояния до стены
+    /// </summary>
+    /// <param name="movableCoordinate"></param>
+    /// <param name="wallCoordinate"></param>
+    /// <param name="sphereRadius"></param>
+    /// <param name="wallDistance"></param>
+    /// <param name="wallDirection"></param>
     private void GetWallDistance(
         int movableCoordinate, 
         int wallCoordinate, 

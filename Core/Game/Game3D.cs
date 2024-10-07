@@ -3,6 +3,11 @@ using Core.Scene;
 
 namespace Core.Game;
 
+/// <summary>
+/// Реализация игры для работы с 3D сценой
+/// Для управления процессами игрового движка используется
+/// <see name="" cref="Core.Game.Controllers.GameController"/>
+/// </summary>
 public sealed class Game3D: IGame
 {
     private readonly GameController _controller;
@@ -12,12 +17,20 @@ public sealed class Game3D: IGame
     {
         _controller = new GameController(scene);
     } 
-        
+    
+    /// <summary>
+    /// Создание инстанса игры
+    /// </summary>
+    /// <param name="scene"></param>
+    /// <returns></returns>
     public static Game3D CreateGame(PlainScene3D scene)
     {
         return new Game3D(scene);
     }
 
+    /// <summary>
+    /// Запуск игры
+    /// </summary>
     public void Start()
     {
         _controller.Init();
@@ -28,6 +41,9 @@ public sealed class Game3D: IGame
         }
     }
 
+    /// <summary>
+    /// Остановка игры
+    /// </summary>
     public void Stop()
     {
         _isRunning = false;
