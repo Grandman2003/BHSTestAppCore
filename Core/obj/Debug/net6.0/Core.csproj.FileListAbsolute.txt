@@ -1,0 +1,17 @@
+C:\Users\gennadiygoykhman\RiderProjects\BHSTestApp\Core\bin\Debug\net6.0\Core.exe
+C:\Users\gennadiygoykhman\RiderProjects\BHSTestApp\Core\bin\Debug\net6.0\Core.deps.json
+C:\Users\gennadiygoykhman\RiderProjects\BHSTestApp\Core\bin\Debug\net6.0\Core.runtimeconfig.json
+C:\Users\gennadiygoykhman\RiderProjects\BHSTestApp\Core\bin\Debug\net6.0\Core.dll
+C:\Users\gennadiygoykhman\RiderProjects\BHSTestApp\Core\bin\Debug\net6.0\ref\Core.dll
+C:\Users\gennadiygoykhman\RiderProjects\BHSTestApp\Core\bin\Debug\net6.0\Core.pdb
+C:\Users\gennadiygoykhman\RiderProjects\BHSTestApp\Core\bin\Debug\net6.0\Leopotam.EcsLite.dll
+C:\Users\gennadiygoykhman\RiderProjects\BHSTestApp\Core\obj\Debug\net6.0\Core.csproj.AssemblyReference.cache
+C:\Users\gennadiygoykhman\RiderProjects\BHSTestApp\Core\obj\Debug\net6.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gennadiygoykhman\RiderProjects\BHSTestApp\Core\obj\Debug\net6.0\Core.AssemblyInfoInputs.cache
+C:\Users\gennadiygoykhman\RiderProjects\BHSTestApp\Core\obj\Debug\net6.0\Core.AssemblyInfo.cs
+C:\Users\gennadiygoykhman\RiderProjects\BHSTestApp\Core\obj\Debug\net6.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\gennadiygoykhman\RiderProjects\BHSTestApp\Core\obj\Debug\net6.0\Core.csproj.CopyComplete
+C:\Users\gennadiygoykhman\RiderProjects\BHSTestApp\Core\obj\Debug\net6.0\Core.dll
+C:\Users\gennadiygoykhman\RiderProjects\BHSTestApp\Core\obj\Debug\net6.0\ref\Core.dll
+C:\Users\gennadiygoykhman\RiderProjects\BHSTestApp\Core\obj\Debug\net6.0\Core.pdb
+C:\Users\gennadiygoykhman\RiderProjects\BHSTestApp\Core\obj\Debug\net6.0\Core.genruntimeconfig.cache

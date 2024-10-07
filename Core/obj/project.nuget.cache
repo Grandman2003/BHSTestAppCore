@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "36tB0T49av8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gennadiygoykhman\\RiderProjects\\BHSTestApp\\Core\\Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gennadiygoykhman\\.nuget\\packages\\leopotam.ecslite\\1.0.1\\leopotam.ecslite.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
